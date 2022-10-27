@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
 import { Image } from 'react-bootstrap';
 import { FaUser } from 'react-icons/fa';
+import Darkmode from '../../Darkmode/Darkmode';
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -30,6 +31,7 @@ const Header = () => {
                             <Link className='text-decoration-none text-secondary me-2' to="/">All News</Link>
                             <Link className='text-decoration-none text-secondary'>Category</Link>
                         </Nav>
+
                         <Nav>
                             {
                                 user?.email ?

@@ -31,7 +31,7 @@ const NewsCard = ({ news }) => {
                         <Pdf targetRef={ref} filename="code-example.pdf">
                             {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
                         </Pdf>
-                        <FaRegBookmark className='me-2'></FaRegBookmark>
+                        <FaRegBookmark className='mx-2'></FaRegBookmark>
                         <FaShareAlt></FaShareAlt>
                     </div>
                 </Card.Header>
